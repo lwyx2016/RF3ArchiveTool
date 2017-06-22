@@ -14,7 +14,9 @@ namespace RF3ArchiveTool
             Console.WriteLine("RF3ArchiveTool");
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Drag and drop the rf3Archive.arc on this program");
-            Console.WriteLine("The project is not completed!!!");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("This project is not completed!!!");
+            Console.ReadKey();
             Console.ResetColor();
         }
         

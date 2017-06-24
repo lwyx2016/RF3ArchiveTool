@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,3 +23,11 @@ namespace RF3ArchiveTool
         
     }
 }
+    /*static void Unpackrf3Archive(string FileName)
+{
+    using (FileStream Input = new FileStream(FileName, FileMode.Open))
+    {
+        BinaryReader Reader = new BinaryReader(Input);
+
+        int Index = 0;
+        string OutFolder = Path.Combine(Path.GetDirectoryName(FileName), "rf3Archive.arc_ext");*/

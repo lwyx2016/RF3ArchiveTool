@@ -9,7 +9,6 @@ Public Class FileRenamer
             Try
                 auto_rename(f)
             Catch ex As Exception
-                If System.Windows.MessageBox.Show("error:" + ex.ToString + vbLf + f, "err", System.Windows.MessageBoxButton.YesNo) = MessageBoxResult.No Then Return
             End Try
         Next
     End Sub

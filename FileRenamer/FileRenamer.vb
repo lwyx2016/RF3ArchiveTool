@@ -60,6 +60,8 @@ Public Class FileRenamer
                 ext1 = "NCGR"
             Case "RLCN"
                 ext1 = "NCLR"
+            Case "RCSN"
+                ext1 = "NSCR"   
         End Select
         If ext1.Length <> 0 Then
             fs.Close()

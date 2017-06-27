@@ -3,15 +3,26 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:local="clr-namespace:FileRenamer"
         mc:Ignorable="d"
         Title="FileRenamer" Height="350" Width="525">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="115*"/>
+            <RowDefinition Height="204*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="43*"/>
             <ColumnDefinition Width="474*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="517" Background="White" Drop="TextBlock_Drop" AllowDrop="True" Height="319" VerticalAlignment="Top" FontSize="18" Grid.ColumnSpan="2"><Run Background="#FFF7F7F7" Foreground="#FFA31515" FontFamily="NSimSun" Text="    "/><Run Background="#FFF7F7F7" Foreground="#FFA31515" FontFamily="NSimSun" Text="Drag and drop the File on this program To Rename"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Width="517" Background="White" Drop="TextBlock_Drop" AllowDrop="True" Height="267" VerticalAlignment="Top" FontSize="18" Grid.ColumnSpan="2" Grid.RowSpan="2" Margin="0,52,0,0">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground></TextBlock>
+        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="47" TextWrapping="Wrap" Text="Drag and drop the File on this program To Rename" VerticalAlignment="Top" Width="517" FontSize="20"/>
 
     </Grid>
 </Window>

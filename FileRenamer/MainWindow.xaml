@@ -23,7 +23,7 @@
                 </LinearGradientBrush>
             </TextBlock.Foreground></TextBlock>
         <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="47" TextWrapping="Wrap" Text="Drag and drop the File on this program To Rename" VerticalAlignment="Top" Width="517" FontSize="20"/>
-        <Button Content="Support Rename formats" Grid.Column="1" HorizontalAlignment="Left" Height="49" Margin="121,4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="174"/>
+        <Button Content="Support Rename formats" Grid.Column="1" HorizontalAlignment="Left" Height="49" Margin="111,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="174" Click="Button_Click" RenderTransformOrigin="0.367,0.545"/>
 
     </Grid>
 </Window>

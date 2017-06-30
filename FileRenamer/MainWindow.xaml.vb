@@ -19,4 +19,8 @@ Class MainWindow
     Private Sub TextBox_TextChanged(sender As Object, e As TextChangedEventArgs)
 
     End Sub
+
+    Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
+        MessageBox.Show("Support Rename files: NSBMD,NSBTA,NSBCA,NSBTP,NFTR,NCGR,NCLR,NSCR,NCER", "FileRenamer")
+    End Sub
 End Class

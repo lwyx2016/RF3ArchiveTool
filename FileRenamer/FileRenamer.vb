@@ -43,30 +43,30 @@ Public Class FileRenamer
         Dim REVntable As New List(Of String)
         Dim ntable As New List(Of String)
         Dim revhead = StrReverse(head)
-        Dim ext1 As String = ""
+        Dim Rename As String = ""
         Select Case head
             Case "BMD0"
-                ext1 = "nsbmd"
+                Rename = "nsbmd"
             Case "BCA0"
-                ext1 = "nsbca"
+                Rename = "nsbca"
             Case "BTX0"
-                ext1 = "nsbtx"
+                Rename = "nsbtx"
             Case "BTP0"
-                ext1 = "nsbtp"
+                Rename = "nsbtp"
             Case "RTFN"
-            ext1 = "NFTR"
+                Rename = "NFTR"
             Case "RECN"
-                ext1 = "NCER"
+                Rename = "NCER"
             Case "RGCN"
-                ext1 = "NCGR"
+                Rename = "NCGR"
             Case "RLCN"
-                ext1 = "NCLR"
+                Rename = "NCLR"
             Case "RCSN"
-                ext1 = "NSCR"   
+                Rename = "NSCR"
         End Select
-        If ext1.Length <> 0 Then
+        If Rename.Length <> 0 Then
             fs.Close()
-            ChangeExt(fn, ext1)
+            ChangeExt(fn, Rename)
             Return
         End If
         fs.Close()
